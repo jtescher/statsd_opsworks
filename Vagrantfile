@@ -71,10 +71,23 @@ Vagrant.configure("2") do |config|
   # config.berkshelf.except = []
 
   config.vm.provision :chef_solo do |chef|
-    chef.json = {}
+    chef.json = {
+      statsd: {
+        repo: "git://github.com/etsy/statsd.git",
+        revision: "v0.6.0"
+      },
+      graphite: {
+        password: "change_me"
+      },
+      nodejs: {
+        install_method: "package"
+      }
+    }
 
     chef.run_list = [
-        "recipe[statsd]"
+      "recipe[apt]",
+      "recipe[graphite]",
+      "recipe[statsd]"
     ]
   end
 end
