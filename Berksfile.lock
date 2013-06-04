@@ -56,7 +56,7 @@
       "locked_version": "0.4.2",
       "constraint": "~> 0.4.2",
       "git": "git://github.com/jtescher/graphite.git",
-      "ref": "c626e72109b4efa027faa4ba93edaff94e9f49a9"
+      "ref": "f08a9b0651a3e99557643e7d628ad9b98ecbf8d7"
     },
     "statsd": {
       "locked_version": "0.1.1",
