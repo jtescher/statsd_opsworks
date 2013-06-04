@@ -3,9 +3,10 @@ site :opscode
 metadata
 
 # AWS OpsWorks verion of runit (Required by graphite)
-cookbook 'apache2', '~> 0.9',       github: 'aws/opsworks-cookbooks', rel: 'apache2'
-cookbook 'runit',   '~> 0.14.2',    github: 'aws/opsworks-cookbooks', rel: 'runit'
-cookbook 'deploy',  '~> 0.1',       github: 'aws/opsworks-cookbooks', rel: 'deploy'
+cookbook 'apache2',   '~> 0.9',    github: 'aws/opsworks-cookbooks', rel: 'apache2'
+cookbook 'memcached', '~> 0.1',    github: 'aws/opsworks-cookbooks', rel: 'memcached'
+cookbook 'runit',     '~> 0.14.2', github: 'aws/opsworks-cookbooks', rel: 'runit'
+cookbook 'deploy',    '~> 0.1',    github: 'aws/opsworks-cookbooks', rel: 'deploy'
 
 # Copy that has metadata for AWS version of graphite dependencies
 cookbook 'opsworks_commons', '~> 0.0.1', github: 'jtescher/opsworks-cookbooks', rel: 'opsworks_commons'
