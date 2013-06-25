@@ -77,7 +77,8 @@ Vagrant.configure("2") do |config|
         revision: "v0.6.0"
       },
       graphite: {
-        password: "change_me"
+        password: "change_me",
+        storage_dir: "/srv/graphite/storage"
       },
       nodejs: {
         install_method: "package"
@@ -86,6 +87,7 @@ Vagrant.configure("2") do |config|
 
     chef.run_list = [
       "recipe[apt]",
+      "recipe[opsworks_agent_monit]",
       "recipe[graphite]",
       "recipe[statsd]"
     ]

@@ -1,3 +1,3 @@
 source 'https://rubygems.org'
 
-gem 'berkshelf', '2.0.0beta', github: 'RiotGames/berkshelf'
+gem 'berkshelf', '~> 2.0.5'
