@@ -82,6 +82,9 @@ Vagrant.configure("2") do |config|
       },
       nodejs: {
         install_method: "package"
+      },
+      newrelic: {
+        license_key: "123abc"
       }
     }
 
@@ -89,7 +92,8 @@ Vagrant.configure("2") do |config|
       "recipe[apt]",
       "recipe[opsworks_agent_monit]",
       "recipe[graphite]",
-      "recipe[statsd]"
+      "recipe[statsd]",
+      "recipe[newrelic-sysmond]"
     ]
   end
 end
