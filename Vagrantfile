@@ -79,7 +79,7 @@ Vagrant.configure("2") do |config|
       },
       graphite: {
         password: "change_me",
-        linked_storage_dirr: "/srv/graphite/storage"
+        linked_storage_dir: "/srv/graphite/storage"
       },
       nodejs: {
         install_method: "package"

@@ -63,7 +63,7 @@
     "graphite": {
       "locked_version": "0.4.2",
       "git": "git://github.com/jtescher/graphite.git",
-      "ref": "351b9448969c09e26d5c1e4212643d532b64afe1"
+      "ref": "13a53e5d15a62c57fd829adf0eccd93454c28b39"
     },
     "statsd": {
       "locked_version": "0.1.1",
@@ -71,7 +71,7 @@
       "ref": "be5de4f7a6c78479947bd6c82d4c01d3a1c41f27"
     },
     "python": {
-      "locked_version": "1.3.4"
+      "locked_version": "1.0.8"
     },
     "build-essential": {
       "locked_version": "1.4.0"
