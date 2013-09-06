@@ -74,15 +74,12 @@ Vagrant.configure("2") do |config|
   config.vm.provision :chef_solo do |chef|
     chef.json = {
       statsd: {
-        repo: "git://github.com/etsy/statsd.git",
-        revision: "v0.6.0"
+        repository: "git://github.com/etsy/statsd.git",
+        reference: "v0.6.0"
       },
       graphite: {
         password: "change_me",
-        linked_storage_dir: "/srv/graphite/storage"
-      },
-      nodejs: {
-        install_method: "package"
+        storage_dir: "/srv/graphite/storage"
       },
       newrelic: {
         license_key: "123abc"
@@ -91,10 +88,12 @@ Vagrant.configure("2") do |config|
 
     chef.run_list = [
       "recipe[apt]",
-      "recipe[opsworks_agent_monit]",
       "recipe[graphite]",
       "recipe[statsd]",
       "recipe[newrelic-sysmond]"
     ]
   end
+
+  # Use OpsWorks Chef version
+  config.omnibus.chef_version = '11.4.0'
 end

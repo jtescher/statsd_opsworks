@@ -1,83 +1,18 @@
 {
-  "sha": "e78fe972d299ffed849ae0dc89426f839523eab9",
   "sources": {
     "statsd-container": {
       "path": "."
     },
-    "apache2": {
-      "locked_version": "0.9.0",
-      "git": "git://github.com/aws/opsworks-cookbooks.git",
-      "ref": "64a701151fae533562bd689eb856003fe3fb744a",
-      "rel": "apache2"
-    },
-    "memcached": {
-      "locked_version": "0.1.0",
-      "git": "git://github.com/aws/opsworks-cookbooks.git",
-      "ref": "64a701151fae533562bd689eb856003fe3fb744a",
-      "rel": "memcached"
-    },
-    "runit": {
-      "locked_version": "0.14.2",
-      "git": "git://github.com/aws/opsworks-cookbooks.git",
-      "ref": "64a701151fae533562bd689eb856003fe3fb744a",
-      "rel": "runit"
-    },
-    "deploy": {
-      "locked_version": "0.1.0",
-      "git": "git://github.com/aws/opsworks-cookbooks.git",
-      "ref": "64a701151fae533562bd689eb856003fe3fb744a",
-      "rel": "deploy"
-    },
-    "opsworks_agent_monit": {
-      "locked_version": "0.1.0",
-      "git": "git://github.com/aws/opsworks-cookbooks.git",
-      "ref": "64a701151fae533562bd689eb856003fe3fb744a",
-      "rel": "opsworks_agent_monit"
-    },
-    "opsworks_initial_setup": {
-      "locked_version": "0.1.0",
-      "git": "git://github.com/aws/opsworks-cookbooks.git",
-      "ref": "64a701151fae533562bd689eb856003fe3fb744a",
-      "rel": "opsworks_initial_setup"
-    },
-    "opsworks_commons": {
-      "locked_version": "0.0.1",
-      "git": "git://github.com/jtescher/opsworks-cookbooks.git",
-      "ref": "ba95f10bb8c3c95a9bab401e70f7064021feada7",
-      "rel": "opsworks_commons"
-    },
-    "nodejs": {
-      "locked_version": "0.0.1",
-      "git": "git://github.com/jtescher/opsworks-cookbooks.git",
-      "ref": "ba95f10bb8c3c95a9bab401e70f7064021feada7",
-      "rel": "opsworks_nodejs"
-    },
-    "apt": {
-      "locked_version": "1.9.2"
-    },
-    "newrelic-sysmond": {
-      "locked_version": "1.3.2",
-      "git": "git://github.com/jtescher/chef-newrelic-sysmond.git",
-      "ref": "5b5ee981dea8e09d282d133bf181125320b0dff0"
+    "statsd": {
+      "locked_version": "1.1.3",
+      "git": "git://github.com/hectcastro/chef-statsd.git",
+      "ref": "d77e04d64ccb002d062aba3c268d3ff04dbeaf4a"
     },
     "graphite": {
-      "locked_version": "0.4.2",
-      "git": "git://github.com/jtescher/graphite.git",
-      "ref": "13a53e5d15a62c57fd829adf0eccd93454c28b39"
+      "locked_version": "0.4.3"
     },
-    "statsd": {
-      "locked_version": "0.1.1",
-      "git": "git://github.com/librato/statsd-cookbook.git",
-      "ref": "be5de4f7a6c78479947bd6c82d4c01d3a1c41f27"
-    },
-    "python": {
-      "locked_version": "1.0.8"
-    },
-    "build-essential": {
-      "locked_version": "1.4.0"
-    },
-    "yum": {
-      "locked_version": "2.3.0"
+    "newrelic-sysmond": {
+      "locked_version": "1.3.3"
     },
     "git": {
       "locked_version": "2.5.2"
@@ -85,11 +20,35 @@
     "dmg": {
       "locked_version": "1.1.0"
     },
+    "build-essential": {
+      "locked_version": "1.4.0"
+    },
+    "yum": {
+      "locked_version": "2.3.0"
+    },
     "windows": {
       "locked_version": "1.10.0"
     },
     "chef_handler": {
       "locked_version": "1.1.4"
+    },
+    "runit": {
+      "locked_version": "1.1.6"
+    },
+    "nodejs": {
+      "locked_version": "1.3.0"
+    },
+    "apt": {
+      "locked_version": "2.0.0"
+    },
+    "python": {
+      "locked_version": "1.3.4"
+    },
+    "apache2": {
+      "locked_version": "1.7.0"
+    },
+    "memcached": {
+      "locked_version": "1.4.0"
     }
   }
 }
