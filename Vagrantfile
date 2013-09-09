@@ -78,8 +78,9 @@ Vagrant.configure("2") do |config|
         reference: "v0.6.0"
       },
       graphite: {
-        password: "change_me",
-        storage_dir: "/srv/graphite/storage"
+        carbon: {
+          whisper_dir: "/srv/whisper"
+        }
       },
       newrelic: {
         license_key: "123abc"
